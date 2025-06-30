@@ -367,32 +367,14 @@ document.getElementById("loveIn").onclick = function() {
     Tombol.style="";
     thisgeser+=1;aktigeser=0;setTimeout(munculkembali,500)
   }
-  function munculkembali(){
-    if(thisgeser<totalPesan){
-      //ketgeser.style="position:relative;transform:scale(1);opacity:.7";
-      Tombol.style="opacity:1;transform: scale(1)";
-      aktigeser=1;
-    }
-    if(thisgeser==totalPesan){tmbl.innerHTML = "💌 Send";Tombol.style="opacity:1;transform: scale(1)";thisgeser=100;}
-  }
-  
+ 
   function aksiakhir(){
   	   pergeseran.style="position:relative;";
          //ketgeser.style="position:relative";
          Tombol.style="";
          setTimeout(aksibalas,500);
   }
-  
-  function kalimatakhir(){
-  	new TypeIt("#kalimat", {
-      strings: ["" + katakata], startDelay: 50, speed: 54, cursor: true,
-      afterComplete: function(){
-      	kalimat.innerHTML = katakata;
-          setInterval(berjatuhan,250);
-          tmbl.innerHTML = "💌 Balas";thisgeser=100;
-          Tombol.style="opacity:1;transform: scale(1)";
-      },}).go();
-  }
+
   
   function ftmuncul(){
     if(ftganti==0){fotostiker.src = deffotostiker;}
